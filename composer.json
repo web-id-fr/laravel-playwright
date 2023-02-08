@@ -1,0 +1,39 @@
+{
+    "name": "web-id/laravel-playwright",
+    "description": "Laravel Playwright Boilerplate",
+    "keywords": [
+        "laravel",
+        "playwtight",
+        "end-to-end"
+    ],
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yoann Frommelt",
+            "email": "yoann@web-id.fr"
+        }
+    ],
+    "homepage": "https://github.com/web-id-fr/laravel-playwright",
+    "autoload": {
+        "psr-4": {
+            "WebId\\LaravelPlaywright\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WebId\\LaravelPlaywright\\CypressServiceProvider"
+            ]
+        }
+    }
+}
+
