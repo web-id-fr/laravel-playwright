@@ -6,7 +6,7 @@
         "playwtight",
         "end-to-end"
     ],
-    "type": "metapackage",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WebId\\LaravelPlaywright\\CypressServiceProvider"
+                "WebId\\LaravelPlaywright\\PlaywrightServiceProvider"
             ]
         }
     }

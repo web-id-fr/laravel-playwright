@@ -42,12 +42,18 @@ class PlaywrightBoilerplateCommand extends Command
             return;
         }
 
+        $playwrightPaths = [
+            'e2e' => (int)$this->files->exists(base_path('e2e')),
+            'tests/e2e' => (int)$this->files->exists(base_path('tests/e2e')),
+            'playwright' => (int)$this->files->exists(base_path('playwright')),
+            'tests/playwright' => (int)$this->files->exists(base_path('tests/playwright')),
+        ];
+        $playwrightPathDefault = array_flip($playwrightPaths)[true] ?? 'e2e';
+
         $this->playwrightPath = trim(
-            strtolower($this->ask('Where should we put the playwright directory? It should be the same directory you choose in the playwright installation wizard', 'tests/e2e')),
+            strtolower($this->ask('Where should we put the playwright directory? It should be the same directory you choose in the playwright installation wizard', $playwrightPathDefault)),
             '/'
         );
-
-        $this->files->moveDirectory(base_path('playwright'), $this->playwrightPath);
 
         $this->copyStubs();
     }
@@ -58,8 +64,6 @@ class PlaywrightBoilerplateCommand extends Command
     protected function copyStubs(): void
     {
         $this->files->copyDirectory(__DIR__ . '/stubs', $this->playwrightPath());
-
-        $this->line('');
 
         $this->status('Writing', $this->playwrightPath('laravel-helpers.ts', false));
         $this->status('Writing', $this->playwrightPath('laravel-examples.spec.ts', false));

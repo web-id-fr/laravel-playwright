@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "372825ee8fad60abcbfde93397648460",
+    "content-hash": "a8e43b0b8184f5887015a19d049e2f47",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -103,12 +103,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "1558731e9896c789d34780266c32fad3a2bff2dd"
+                "reference": "d5182350914d6cdee3dd19e07864de26f4c3b741"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/1558731e9896c789d34780266c32fad3a2bff2dd",
-                "reference": "1558731e9896c789d34780266c32fad3a2bff2dd",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/d5182350914d6cdee3dd19e07864de26f4c3b741",
+                "reference": "d5182350914d6cdee3dd19e07864de26f4c3b741",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-02-08T14:39:45+00:00"
+            "time": "2023-02-09T08:37:58+00:00"
         },
         {
             "name": "illuminate/conditionable",
