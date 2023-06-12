@@ -7,13 +7,6 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use Illuminate\Support\Arr;
-use function App\Http\Controllers\app;
-use function App\Http\Controllers\auth;
-use function App\Http\Controllers\collect;
-use function App\Http\Controllers\config;
-use function App\Http\Controllers\csrf_token;
-use function App\Http\Controllers\response;
-use function App\Http\Controllers\tap;
 
 class PlaywrightController
 {
